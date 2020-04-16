@@ -4,8 +4,6 @@ gcal = Calendar.from_ical(g.read())
 
 result_list = []
 
-a = 1
-
 for event in gcal.walk('vevent'):
     each_val = {}
     if event.get('name'):
@@ -39,4 +37,4 @@ for event in gcal.walk('vevent'):
 
     result_list.append(each_val)
 
-# print(result_list)
+print(result_list)
